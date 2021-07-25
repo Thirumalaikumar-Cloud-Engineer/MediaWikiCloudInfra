@@ -1,0 +1,165 @@
+2021/07/25 19:51:19 [INFO] Packer version: 1.7.0 [go1.15.8 darwin amd64]
+2021/07/25 19:51:19 [TRACE] discovering plugins in /Users/thirumalaikumarp/homebrew/bin
+2021/07/25 19:51:19 [TRACE] discovering plugins in /Users/thirumalaikumarp/.packer.d/plugins
+2021/07/25 19:51:19 [TRACE] discovering plugins in .
+2021/07/25 19:51:19 [INFO] PACKER_CONFIG env var not set; checking the default config file path
+2021/07/25 19:51:19 [INFO] PACKER_CONFIG env var set; attempting to open config file: /Users/thirumalaikumarp/.packerconfig
+2021/07/25 19:51:19 [WARN] Config file doesn't exist: /Users/thirumalaikumarp/.packerconfig
+2021/07/25 19:51:19 [INFO] Setting cache directory: /Users/thirumalaikumarp/Documents/MediaWiki/MediaWikiCloudInfra/packer/packer_cache
+2021/07/25 19:51:19 [TRACE] validateValue: not active for ami_prefix, so skipping
+2021/07/25 19:51:19 [TRACE] validateValue: not active for vpc_id, so skipping
+2021/07/25 19:51:19 [TRACE] validateValue: not active for subnet_id, so skipping
+2021/07/25 19:51:19 [TRACE] validateValue: not active for region, so skipping
+2021/07/25 19:51:19 [TRACE] validateValue: not active for security_group_id, so skipping
+2021/07/25 19:51:19 [TRACE] listing potential installations for "github.com/hashicorp/amazon" that match ">= 0.0.1". plugingetter.ListInstallationsOptions{FromFolders:[]string{"/Users/thirumalaikumarp/homebrew/bin/packer", ".", "/Users/thirumalaikumarp/.packer.d/plugins"}, BinaryInstallationOptions:plugingetter.BinaryInstallationOptions{APIVersionMajor:"5", APIVersionMinor:"0", OS:"darwin", ARCH:"amd64", Ext:"", Checksummers:[]plugingetter.Checksummer{plugingetter.Checksummer{Type:"sha256", Hash:(*sha256.digest)(0xc0005de000)}}}}
+2021/07/25 19:51:19 [TRACE] Found the following "github.com/hashicorp/amazon" installations: [{/Users/thirumalaikumarp/.packer.d/plugins/github.com/hashicorp/amazon/packer-plugin-amazon_v1.0.0_x5.0_darwin_amd64 v1.0.0}]
+2021/07/25 19:51:19 [INFO] found external [chroot ebs ebssurrogate ebsvolume instance] builders from amazon plugin
+2021/07/25 19:51:19 [INFO] found external [import] post-processors from amazon plugin
+2021/07/25 19:51:19 found external [ami secretsmanager] datasource from amazon plugin
+2021/07/25 19:51:19 [TRACE] validateValue: not active for region, so skipping
+2021/07/25 19:51:19 [TRACE] validateValue: not active for security_group_id, so skipping
+2021/07/25 19:51:19 [TRACE] validateValue: not active for ami_prefix, so skipping
+2021/07/25 19:51:19 [TRACE] validateValue: not active for vpc_id, so skipping
+2021/07/25 19:51:19 [TRACE] validateValue: not active for subnet_id, so skipping
+2021/07/25 19:51:19 [TRACE] validateValue: not active for security_group_id, so skipping
+2021/07/25 19:51:19 [TRACE] validateValue: not active for ami_prefix, so skipping
+2021/07/25 19:51:19 [TRACE] validateValue: not active for vpc_id, so skipping
+2021/07/25 19:51:19 [TRACE] validateValue: not active for subnet_id, so skipping
+2021/07/25 19:51:19 [TRACE] validateValue: not active for region, so skipping
+2021/07/25 19:51:19 [TRACE] validateValue: not active for security_group_id, so skipping
+2021/07/25 19:51:19 [TRACE] validateValue: not active for ami_prefix, so skipping
+2021/07/25 19:51:19 [TRACE] validateValue: not active for vpc_id, so skipping
+2021/07/25 19:51:19 [TRACE] validateValue: not active for subnet_id, so skipping
+2021/07/25 19:51:19 [TRACE] validateValue: not active for region, so skipping
+2021/07/25 19:51:19 [TRACE] validateValue: not active for timestamp, so skipping
+2021/07/25 19:51:19 [TRACE] validateValue: not active for region, so skipping
+2021/07/25 19:51:19 [TRACE] validateValue: not active for security_group_id, so skipping
+2021/07/25 19:51:19 [TRACE] validateValue: not active for ami_prefix, so skipping
+2021/07/25 19:51:19 [TRACE] validateValue: not active for vpc_id, so skipping
+2021/07/25 19:51:19 [TRACE] validateValue: not active for subnet_id, so skipping
+2021/07/25 19:51:19 [TRACE] validateValue: not active for timestamp, so skipping
+2021/07/25 19:51:19 [TRACE] validateValue: not active for region, so skipping
+2021/07/25 19:51:19 [TRACE] validateValue: not active for security_group_id, so skipping
+2021/07/25 19:51:19 [TRACE] validateValue: not active for ami_prefix, so skipping
+2021/07/25 19:51:19 [TRACE] validateValue: not active for vpc_id, so skipping
+2021/07/25 19:51:19 [TRACE] validateValue: not active for subnet_id, so skipping
+2021/07/25 19:51:19 [TRACE] validateValue: not active for timestamp, so skipping
+2021/07/25 19:51:19 [TRACE] Starting external plugin /Users/thirumalaikumarp/.packer.d/plugins/github.com/hashicorp/amazon/packer-plugin-amazon_v1.0.0_x5.0_darwin_amd64 start builder ebs
+2021/07/25 19:51:19 Starting plugin: /Users/thirumalaikumarp/.packer.d/plugins/github.com/hashicorp/amazon/packer-plugin-amazon_v1.0.0_x5.0_darwin_amd64 []string{"/Users/thirumalaikumarp/.packer.d/plugins/github.com/hashicorp/amazon/packer-plugin-amazon_v1.0.0_x5.0_darwin_amd64", "start", "builder", "ebs"}
+2021/07/25 19:51:19 Waiting for RPC address for: /Users/thirumalaikumarp/.packer.d/plugins/github.com/hashicorp/amazon/packer-plugin-amazon_v1.0.0_x5.0_darwin_amd64
+2021/07/25 19:51:19 packer-plugin-amazon_v1.0.0_x5.0_darwin_amd64 plugin: 2021/07/25 19:51:19 Plugin address: unix /var/folders/qs/j1zyr_h95cz765hjrlwtwfl0z647zv/T/packer-plugin888742792
+2021/07/25 19:51:19 Received unix RPC address for /Users/thirumalaikumarp/.packer.d/plugins/github.com/hashicorp/amazon/packer-plugin-amazon_v1.0.0_x5.0_darwin_amd64: addr is /var/folders/qs/j1zyr_h95cz765hjrlwtwfl0z647zv/T/packer-plugin888742792
+2021/07/25 19:51:19 packer-plugin-amazon_v1.0.0_x5.0_darwin_amd64 plugin: 2021/07/25 19:51:19 Waiting for connection...
+2021/07/25 19:51:19 packer-plugin-amazon_v1.0.0_x5.0_darwin_amd64 plugin: 2021/07/25 19:51:19 Serving a plugin connection...
+2021/07/25 19:51:19 packer-plugin-amazon_v1.0.0_x5.0_darwin_amd64 plugin: 2021/07/25 19:51:19 [TRACE] starting builder ebs
+2021/07/25 19:51:19 packer-plugin-amazon_v1.0.0_x5.0_darwin_amd64 plugin: 2021/07/25 19:51:19 [INFO] (aws): No AWS timeout and polling overrides have been set. Packer will default to waiter-specific delays and timeouts. If you would like to customize the length of time between retries and max number of retries you may do so by setting the environment variables AWS_POLL_DELAY_SECONDS and AWS_MAX_ATTEMPTS or the configuration options aws_polling_delay_seconds and aws_polling_max_attempts to your desired values.
+2021/07/25 19:51:19 [TRACE] validateValue: not active for ami_prefix, so skipping
+2021/07/25 19:51:19 [TRACE] validateValue: not active for vpc_id, so skipping
+2021/07/25 19:51:19 [TRACE] validateValue: not active for subnet_id, so skipping
+2021/07/25 19:51:19 [TRACE] validateValue: not active for region, so skipping
+2021/07/25 19:51:19 [TRACE] validateValue: not active for security_group_id, so skipping
+2021/07/25 19:51:19 [TRACE] validateValue: not active for timestamp, so skipping
+2021/07/25 19:51:19 [TRACE] validateValue: not active for region, so skipping
+2021/07/25 19:51:19 [TRACE] validateValue: not active for security_group_id, so skipping
+2021/07/25 19:51:19 [TRACE] validateValue: not active for ami_prefix, so skipping
+2021/07/25 19:51:19 [TRACE] validateValue: not active for vpc_id, so skipping
+2021/07/25 19:51:19 [TRACE] validateValue: not active for subnet_id, so skipping
+2021/07/25 19:51:19 [TRACE] validateValue: not active for timestamp, so skipping
+2021/07/25 19:51:19 ui: [1;32mamazon-ebs.ubuntu: output will be in this color.[0m
+2021/07/25 19:51:19 ui: 
+2021/07/25 19:51:19 Build debug mode: false
+2021/07/25 19:51:19 Force build: false
+2021/07/25 19:51:19 On error: 
+2021/07/25 19:51:19 Waiting on builds to complete...
+2021/07/25 19:51:19 Starting build run: amazon-ebs.ubuntu
+2021/07/25 19:51:19 Running builder: 
+2021/07/25 19:51:19 [INFO] (telemetry) Starting builder 
+2021/07/25 19:51:19 packer-plugin-amazon_v1.0.0_x5.0_darwin_amd64 plugin: 2021/07/25 19:51:19 [INFO] AWS Auth provider used: "EnvProvider"
+2021/07/25 19:51:19 packer-plugin-amazon_v1.0.0_x5.0_darwin_amd64 plugin: 2021/07/25 19:51:19 Found region ap-south-1
+2021/07/25 19:51:19 packer-plugin-amazon_v1.0.0_x5.0_darwin_amd64 plugin: 2021/07/25 19:51:19 [INFO] AWS Auth provider used: "EnvProvider"
+2021/07/25 19:51:19 ui: [1;32m==> amazon-ebs.ubuntu: Prevalidating any provided VPC information[0m
+2021/07/25 19:51:19 ui: [1;32m==> amazon-ebs.ubuntu: Prevalidating AMI Name: MediaWiki-packer-base-image-20210725142119[0m
+2021/07/25 19:51:20 packer-plugin-amazon_v1.0.0_x5.0_darwin_amd64 plugin: 2021/07/25 19:51:20 Using AMI Filters {
+2021/07/25 19:51:20 packer-plugin-amazon_v1.0.0_x5.0_darwin_amd64 plugin:   Filters: [{
+2021/07/25 19:51:20 packer-plugin-amazon_v1.0.0_x5.0_darwin_amd64 plugin:       Name: "name",
+2021/07/25 19:51:20 packer-plugin-amazon_v1.0.0_x5.0_darwin_amd64 plugin:       Values: ["ubuntu/images/*ubuntu-focal-20.04-*-server-*"]
+2021/07/25 19:51:20 packer-plugin-amazon_v1.0.0_x5.0_darwin_amd64 plugin:     },{
+2021/07/25 19:51:20 packer-plugin-amazon_v1.0.0_x5.0_darwin_amd64 plugin:       Name: "root-device-type",
+2021/07/25 19:51:20 packer-plugin-amazon_v1.0.0_x5.0_darwin_amd64 plugin:       Values: ["ebs"]
+2021/07/25 19:51:20 packer-plugin-amazon_v1.0.0_x5.0_darwin_amd64 plugin:     },{
+2021/07/25 19:51:20 packer-plugin-amazon_v1.0.0_x5.0_darwin_amd64 plugin:       Name: "virtualization-type",
+2021/07/25 19:51:20 packer-plugin-amazon_v1.0.0_x5.0_darwin_amd64 plugin:       Values: ["hvm"]
+2021/07/25 19:51:20 packer-plugin-amazon_v1.0.0_x5.0_darwin_amd64 plugin:     }],
+2021/07/25 19:51:20 packer-plugin-amazon_v1.0.0_x5.0_darwin_amd64 plugin:   Owners: ["099720109477"]
+2021/07/25 19:51:20 packer-plugin-amazon_v1.0.0_x5.0_darwin_amd64 plugin: }
+2021/07/25 19:51:20 ui: [0;32m    amazon-ebs.ubuntu: Found Image ID: ami-0443fb07ed652c341[0m
+2021/07/25 19:51:20 packer-plugin-amazon_v1.0.0_x5.0_darwin_amd64 plugin: 2021/07/25 19:51:20 [INFO] Finding AZ and VpcId for the given subnet 'subnet-0e9dd6ae025f7b16f'
+2021/07/25 19:51:20 packer-plugin-amazon_v1.0.0_x5.0_darwin_amd64 plugin: 2021/07/25 19:51:20 [INFO] AvailabilityZone found: 'ap-south-1b'
+2021/07/25 19:51:20 ui: [1;32m==> amazon-ebs.ubuntu: Creating temporary keypair: packer_60fd735f-083b-d146-110e-3c9683eacef9[0m
+2021/07/25 19:51:21 packer-plugin-amazon_v1.0.0_x5.0_darwin_amd64 plugin: 2021/07/25 19:51:21 Using specified security groups: [sg-0e28330164d80ae93]
+2021/07/25 19:51:21 ui: [1;32m==> amazon-ebs.ubuntu: Launching a source AWS instance...[0m
+2021/07/25 19:51:21 ui: [1;32m==> amazon-ebs.ubuntu: Adding tags to source instance[0m
+2021/07/25 19:51:21 ui: [0;32m    amazon-ebs.ubuntu: Adding tag: "Name": "Packer Builder"[0m
+2021/07/25 19:51:22 ui: [0;32m    amazon-ebs.ubuntu: Instance ID: i-02e456808273e726e[0m
+2021/07/25 19:51:22 ui: [1;32m==> amazon-ebs.ubuntu: Waiting for instance (i-02e456808273e726e) to become ready...[0m
+2021/07/25 19:51:53 packer-plugin-amazon_v1.0.0_x5.0_darwin_amd64 plugin: 2021/07/25 19:51:53 [INFO] Not using winrm communicator, skipping get password...
+2021/07/25 19:51:53 ui: [1;32m==> amazon-ebs.ubuntu: Using SSH communicator to connect: 3.108.64.229[0m
+2021/07/25 19:51:53 packer-plugin-amazon_v1.0.0_x5.0_darwin_amd64 plugin: 2021/07/25 19:51:53 [INFO] Waiting for SSH, up to timeout: 10m0s
+2021/07/25 19:51:53 ui: [1;32m==> amazon-ebs.ubuntu: Waiting for SSH to become available...[0m
+2021/07/25 19:51:53 packer-plugin-amazon_v1.0.0_x5.0_darwin_amd64 plugin: 2021/07/25 19:51:53 Using host value: 3.108.64.229
+2021/07/25 19:52:08 packer-plugin-amazon_v1.0.0_x5.0_darwin_amd64 plugin: 2021/07/25 19:52:08 [DEBUG] TCP connection to SSH ip/port failed: dial tcp 3.108.64.229:22: i/o timeout
+2021/07/25 19:52:13 packer-plugin-amazon_v1.0.0_x5.0_darwin_amd64 plugin: 2021/07/25 19:52:13 Using host value: 3.108.64.229
+2021/07/25 19:52:28 packer-plugin-amazon_v1.0.0_x5.0_darwin_amd64 plugin: 2021/07/25 19:52:28 [DEBUG] TCP connection to SSH ip/port failed: dial tcp 3.108.64.229:22: i/o timeout
+2021/07/25 19:52:33 packer-plugin-amazon_v1.0.0_x5.0_darwin_amd64 plugin: 2021/07/25 19:52:33 Using host value: 3.108.64.229
+2021/07/25 19:52:48 packer-plugin-amazon_v1.0.0_x5.0_darwin_amd64 plugin: 2021/07/25 19:52:48 [DEBUG] TCP connection to SSH ip/port failed: dial tcp 3.108.64.229:22: i/o timeout
+2021/07/25 19:52:53 packer-plugin-amazon_v1.0.0_x5.0_darwin_amd64 plugin: 2021/07/25 19:52:53 Using host value: 3.108.64.229
+2021/07/25 19:53:08 packer-plugin-amazon_v1.0.0_x5.0_darwin_amd64 plugin: 2021/07/25 19:53:08 [DEBUG] TCP connection to SSH ip/port failed: dial tcp 3.108.64.229:22: i/o timeout
+2021/07/25 19:53:13 packer-plugin-amazon_v1.0.0_x5.0_darwin_amd64 plugin: 2021/07/25 19:53:13 Using host value: 3.108.64.229
+2021/07/25 19:53:28 packer-plugin-amazon_v1.0.0_x5.0_darwin_amd64 plugin: 2021/07/25 19:53:28 [DEBUG] TCP connection to SSH ip/port failed: dial tcp 3.108.64.229:22: i/o timeout
+2021/07/25 19:53:33 packer-plugin-amazon_v1.0.0_x5.0_darwin_amd64 plugin: 2021/07/25 19:53:33 Using host value: 3.108.64.229
+2021/07/25 19:53:48 packer-plugin-amazon_v1.0.0_x5.0_darwin_amd64 plugin: 2021/07/25 19:53:48 [DEBUG] TCP connection to SSH ip/port failed: dial tcp 3.108.64.229:22: i/o timeout
+2021/07/25 19:53:53 packer-plugin-amazon_v1.0.0_x5.0_darwin_amd64 plugin: 2021/07/25 19:53:53 Using host value: 3.108.64.229
+2021/07/25 19:54:08 packer-plugin-amazon_v1.0.0_x5.0_darwin_amd64 plugin: 2021/07/25 19:54:08 [DEBUG] TCP connection to SSH ip/port failed: dial tcp 3.108.64.229:22: i/o timeout
+2021/07/25 19:54:13 packer-plugin-amazon_v1.0.0_x5.0_darwin_amd64 plugin: 2021/07/25 19:54:13 Using host value: 3.108.64.229
+2021/07/25 19:54:28 packer-plugin-amazon_v1.0.0_x5.0_darwin_amd64 plugin: 2021/07/25 19:54:28 [DEBUG] TCP connection to SSH ip/port failed: dial tcp 3.108.64.229:22: i/o timeout
+2021/07/25 19:54:33 packer-plugin-amazon_v1.0.0_x5.0_darwin_amd64 plugin: 2021/07/25 19:54:33 Using host value: 3.108.64.229
+2021/07/25 19:54:48 packer-plugin-amazon_v1.0.0_x5.0_darwin_amd64 plugin: 2021/07/25 19:54:48 [DEBUG] TCP connection to SSH ip/port failed: dial tcp 3.108.64.229:22: i/o timeout
+2021/07/25 19:54:53 packer-plugin-amazon_v1.0.0_x5.0_darwin_amd64 plugin: 2021/07/25 19:54:53 Using host value: 3.108.64.229
+2021/07/25 19:55:08 packer-plugin-amazon_v1.0.0_x5.0_darwin_amd64 plugin: 2021/07/25 19:55:08 [DEBUG] TCP connection to SSH ip/port failed: dial tcp 3.108.64.229:22: i/o timeout
+2021/07/25 19:55:13 packer-plugin-amazon_v1.0.0_x5.0_darwin_amd64 plugin: 2021/07/25 19:55:13 Using host value: 3.108.64.229
+2021/07/25 19:55:28 packer-plugin-amazon_v1.0.0_x5.0_darwin_amd64 plugin: 2021/07/25 19:55:28 [DEBUG] TCP connection to SSH ip/port failed: dial tcp 3.108.64.229:22: i/o timeout
+2021/07/25 19:55:33 packer-plugin-amazon_v1.0.0_x5.0_darwin_amd64 plugin: 2021/07/25 19:55:33 Using host value: 3.108.64.229
+2021/07/25 19:55:48 packer-plugin-amazon_v1.0.0_x5.0_darwin_amd64 plugin: 2021/07/25 19:55:48 [DEBUG] TCP connection to SSH ip/port failed: dial tcp 3.108.64.229:22: i/o timeout
+2021/07/25 19:55:53 packer-plugin-amazon_v1.0.0_x5.0_darwin_amd64 plugin: 2021/07/25 19:55:53 Using host value: 3.108.64.229
+2021/07/25 19:56:08 packer-plugin-amazon_v1.0.0_x5.0_darwin_amd64 plugin: 2021/07/25 19:56:08 [DEBUG] TCP connection to SSH ip/port failed: dial tcp 3.108.64.229:22: i/o timeout
+2021/07/25 19:56:13 packer-plugin-amazon_v1.0.0_x5.0_darwin_amd64 plugin: 2021/07/25 19:56:13 Using host value: 3.108.64.229
+2021/07/25 19:56:28 packer-plugin-amazon_v1.0.0_x5.0_darwin_amd64 plugin: 2021/07/25 19:56:28 [DEBUG] TCP connection to SSH ip/port failed: dial tcp 3.108.64.229:22: i/o timeout
+2021/07/25 19:56:33 packer-plugin-amazon_v1.0.0_x5.0_darwin_amd64 plugin: 2021/07/25 19:56:33 Using host value: 3.108.64.229
+2021/07/25 19:56:48 packer-plugin-amazon_v1.0.0_x5.0_darwin_amd64 plugin: 2021/07/25 19:56:48 [DEBUG] TCP connection to SSH ip/port failed: dial tcp 3.108.64.229:22: i/o timeout
+2021/07/25 19:56:53 packer-plugin-amazon_v1.0.0_x5.0_darwin_amd64 plugin: 2021/07/25 19:56:53 Using host value: 3.108.64.229
+2021/07/25 19:57:08 packer-plugin-amazon_v1.0.0_x5.0_darwin_amd64 plugin: 2021/07/25 19:57:08 [DEBUG] TCP connection to SSH ip/port failed: dial tcp 3.108.64.229:22: i/o timeout
+2021/07/25 19:57:13 packer-plugin-amazon_v1.0.0_x5.0_darwin_amd64 plugin: 2021/07/25 19:57:13 Using host value: 3.108.64.229
+2021/07/25 19:57:28 packer-plugin-amazon_v1.0.0_x5.0_darwin_amd64 plugin: 2021/07/25 19:57:28 [DEBUG] TCP connection to SSH ip/port failed: dial tcp 3.108.64.229:22: i/o timeout
+2021/07/25 19:57:33 packer-plugin-amazon_v1.0.0_x5.0_darwin_amd64 plugin: 2021/07/25 19:57:33 Using host value: 3.108.64.229
+2021/07/25 19:57:48 packer-plugin-amazon_v1.0.0_x5.0_darwin_amd64 plugin: 2021/07/25 19:57:48 [DEBUG] TCP connection to SSH ip/port failed: dial tcp 3.108.64.229:22: i/o timeout
+2021/07/25 19:57:53 packer-plugin-amazon_v1.0.0_x5.0_darwin_amd64 plugin: 2021/07/25 19:57:53 Using host value: 3.108.64.229
+2021/07/25 19:58:08 packer-plugin-amazon_v1.0.0_x5.0_darwin_amd64 plugin: 2021/07/25 19:58:08 [DEBUG] TCP connection to SSH ip/port failed: dial tcp 3.108.64.229:22: i/o timeout
+2021/07/25 19:58:13 packer-plugin-amazon_v1.0.0_x5.0_darwin_amd64 plugin: 2021/07/25 19:58:13 Using host value: 3.108.64.229
+2021/07/25 19:58:28 ui error: Cancelling build after receiving interrupt
+2021/07/25 19:58:28 Cancelling builder after context cancellation context canceled
+2021/07/25 19:58:28 packer-plugin-amazon_v1.0.0_x5.0_darwin_amd64 plugin: 2021/07/25 19:58:28 Received interrupt signal (count: 1). Ignoring.
+2021/07/25 19:58:28 packer-plugin-amazon_v1.0.0_x5.0_darwin_amd64 plugin: 2021/07/25 19:58:28 [WARN] Interrupt detected, quitting waiting for SSH.
+2021/07/25 19:58:28 ui: [1;32m==> amazon-ebs.ubuntu: Terminating the source AWS instance...[0m
+2021/07/25 19:58:28 packer-plugin-amazon_v1.0.0_x5.0_darwin_amd64 plugin: 2021/07/25 19:58:28 [DEBUG] TCP connection to SSH ip/port failed: dial tcp 3.108.64.229:22: i/o timeout
+2021/07/25 19:58:28 packer-plugin-amazon_v1.0.0_x5.0_darwin_amd64 plugin: 2021/07/25 19:58:28 [DEBUG] SSH wait cancelled. Exiting loop.
+2021/07/25 19:58:59 ui: [1;32m==> amazon-ebs.ubuntu: Cleaning up any extra volumes...[0m
+2021/07/25 19:58:59 ui: [1;32m==> amazon-ebs.ubuntu: No volumes to clean up, skipping[0m
+2021/07/25 19:58:59 ui: [1;32m==> amazon-ebs.ubuntu: Deleting temporary keypair...[0m
+2021/07/25 19:58:59 [INFO] (telemetry) ending 
+2021/07/25 19:58:59 ui: [1;32mBuild 'amazon-ebs.ubuntu' finished after 7 minutes 40 seconds.[0m
+2021/07/25 19:58:59 ui: 
+==> Wait completed after 7 minutes 40 seconds
+2021/07/25 19:58:59 ui: Cleanly cancelled builds after being interrupted.
+2021/07/25 19:58:59 [INFO] (telemetry) Finalizing.
+2021/07/25 19:59:00 waiting for all plugin processes to complete...
+2021/07/25 19:59:00 /Users/thirumalaikumarp/.packer.d/plugins/github.com/hashicorp/amazon/packer-plugin-amazon_v1.0.0_x5.0_darwin_amd64: plugin process exited

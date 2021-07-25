@@ -1,0 +1,76 @@
+---
+- name: "Provision Image"
+- hosts: default
+  remote_user: ubuntu
+  become: true
+
+  tasks:
+    - name: Install Lamp server
+    apt:
+      name: "{{ item }}"
+      state: latest
+      with_items:
+        - unzip
+        - jq
+        - curl
+        - apache2
+        - php
+        - php-mysql
+        - php-gd
+        - php-xml
+        - mariadb-server
+        - php-mbstring
+      become: true
+
+    - name: Start mariadb service
+      service:
+        name: mariadb
+        state: started
+        enabled: yes
+      become: true
+
+    - name: Autostart apache2 server
+      service:
+        name: apache2
+        enabled: yes
+      become: true
+
+    - name: Create wiki user in mysql
+      mysql_user:
+        name: wiki
+        password: shouldBeChanged
+        priv: 'wikidatabase.*'
+        state: present
+
+    - name: Create a new database for wiki
+      mysql_db:
+      name: wikidatabase
+      state: present
+
+    - name: Download Media Wiki
+      get_url:
+        url: https://releases.wikimedia.org/mediawiki/1.36/mediawiki-core-1.36.1.tar.gz
+        dest: /home/ubuntu
+
+    - name: Extract mediawiki tar
+      unarchive:
+        src: /home/ubuntu/mediawiki-core-1.36.1.tar.gz
+        dest: /home/ubuntu
+        dest: /var/www
+      become: true
+
+    - name: Create sym link mediawiki
+      file:
+        src: /var/www/mediawiki-core-1.36.1
+        dest: /var/www/mediawiki
+        owner: apache
+        group: apache
+        state: link
+      become: true
+
+    - name: Restart apache2
+      service:
+        name: apache2
+        state: restarted
+      become: true
+  
