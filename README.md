@@ -10,7 +10,7 @@ I am creating MediaWiki Deployment with the below process:
   3. Terraform to provision a jenkins for CI/CD setup. (This I could not complete due to time constraint)
   4. AWS Code Pipeline/Code Build manual setup for MediaWiki github codes' deployment. 
 
-![Screenshot](https://github.com/Thirumalaikumar-Cloud-Engineer/MediaWikiCloudInfra/blob/main/MediaWiki_Architecture_HLD.png?raw=true)
+![Screenshot](https://github.com/Thirumalaikumar-Cloud-Engineer/MediaWikiCloudInfra/blob/main/screenshots/MediaWiki_Architecture_HLD.png)
 
 Features:
 
