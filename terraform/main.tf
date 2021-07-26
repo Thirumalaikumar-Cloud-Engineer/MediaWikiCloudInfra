@@ -119,7 +119,7 @@ resource "aws_launch_configuration" "mediawiki-lc" {
   }
 }
 
-/* # Creating AutoScaling Group
+# Creating AutoScaling Group
 resource "aws_autoscaling_group" "mediawiki-asg" {
   launch_configuration = aws_launch_configuration.mediawiki-lc.id
   availability_zones = ["data.aws_availability_zones.all.names"] #Ref: Its a list of strings with 3 elements - one for each machines. 
@@ -132,7 +132,7 @@ resource "aws_autoscaling_group" "mediawiki-asg" {
     value = "terraform-mediawiki-asg"
     propagate_at_launch = true
   }
-} */
+} 
 
 #Create EC2 Instance
 resource "aws_instance" "mediawiki_main" {
