@@ -23,5 +23,11 @@ variable "amis" {
   }
 }
 
+#variable setup for Jenkins Ingress
+variable "ingressrules" {
+  type    = list(number)
+  default = [80, 443, 22]
+}
+
 
 

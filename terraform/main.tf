@@ -142,10 +142,13 @@ resource "aws_instance" "mediawiki_main" {
   availability_zone      = var.subnet1_availability_zone
   vpc_security_group_ids = [aws_security_group.webserver-sg.id]
   subnet_id              = aws_subnet.web-subnet-1.id
-  user_data              = file("./user_data.sh")
 
   tags = {
     Name = join("",["MediaWiki-Web-App-Main",count.index+1])
+  }
+
+  lifecycle {
+      ignore_changes = [user_data, volume_tags]
   }
 }
 
@@ -157,10 +160,13 @@ resource "aws_instance" "mediawiki_backup" {
   availability_zone      = var.subnet2_availability_zone
   vpc_security_group_ids = [aws_security_group.webserver-sg.id]
   subnet_id              = aws_subnet.web-subnet-2.id
-  user_data              = file("./user_data.sh")
 
   tags = {
     Name = join("",["MediaWiki-Web-App-Backup",count.index+1])
+  }
+
+  lifecycle {
+      ignore_changes = [user_data, volume_tags]
   }
 }
 /* 
