@@ -67,8 +67,12 @@ build {
   sources = [
     "source.amazon-ebs.ubuntu"
   ]
+  
+  provisioner "shell" {
+    script = "user_data.sh"
+  }
 
-  /* provisioner "ansible" {
+  provisioner "ansible" {
     playbook_file = "mediawiki_installation.yml"
-  } */
+  }
 }
