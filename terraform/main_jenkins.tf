@@ -34,7 +34,7 @@ resource "aws_instance" "jenkins" {
   security_groups = [aws_security_group.web_traffic.name]
   #key_name        = "jenkins_key"
 
-  provisioner "remote-exec" {
+  /*provisioner "remote-exec" {
     inline = [
       "wget -q -O - https://pkg.jenkins.io/debian-stable/jenkins.io.key | sudo apt-key add -",
       "sudo sh -c 'echo deb http://pkg.jenkins.io/debian-stable binary/ > /etc/apt/sources.list.d/jenkins.list'",
@@ -56,7 +56,7 @@ resource "aws_instance" "jenkins" {
     host        = self.public_ip
     user        = "ubuntu"
     private_key = file("/Users/thirumalaikumarp/Documents/MediaWiki/MediaWikiCloudInfra/terraform/jenkins_key.pem")
-  }
+  }*/
 
   tags = {
     "Name"      = "Jenkins_Server"
